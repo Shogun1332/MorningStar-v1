@@ -1,5 +1,6 @@
 #import Character
 import random
+from abilityscores import AbilityScores
 
 print("                         _             __ _             ")
 print("  /\/\   ___  _ __ _ __ (_)_ __   __ _/ _\ |_ __ _ _ __ ")
@@ -107,5 +108,17 @@ while True:
     job = job.capitalize()
 
     print('') #Line Break
+    print("Guild Attendant: 'Okay, now we need to get an understanding of your strengths and weaknesses.'")
+    print("Guild Attendant: 'We have six categories that we call ability scores. Please fill this out to your best knowledge.")
+    print("Guild Attendant: 'Here are your base scores, don't be upset, we start low across the board and let you increase them.'")
+    charAbilityScores = AbilityScores(race)
+    charAbilityScores.printAbilityScores()
+    print("\n")
+    print("Guild Attendant: 'And here is a list of how many...points... it takes to increase your scores. Don't think about it too much...'")
+    charAbilityScores.printPointsCost()
+
+
+
+    #break out of character creation while loop
     break
 input('')
