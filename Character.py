@@ -2,14 +2,14 @@ import random
 from enum import Enum
 
 class Character:
-    name
-    race
-    job
-    abilityScores
-    level
-    abilities
-    currentHP
-    maxHP
+    #name
+    #race
+    #job
+    #abilityScores
+    #level
+    #abilities
+    #currentHP
+    #maxHP
 
     def __init__(self, name, race, job, abilityScores, level, abilities):
         self.name = name
@@ -19,7 +19,7 @@ class Character:
         self.level = level
         self.abilities = abilities
 
-    def printCharacter():
+    def printCharacter(self):
         print('--------------------------------------------------------------------------')
         print('| Name: ' + self.name)
         print('--------------------------------------------------------------------------')
@@ -42,11 +42,11 @@ class Character:
         print('')
         input('Press Enter to return to your Adventure...')
 
-    def levelUp():
+    def levelUp(self):
         self.level = self.level + 1
 
     class Inventory:
-        itemName
+        #itemName
 
         #def printInventory():
 
@@ -56,19 +56,19 @@ class Character:
 
         #def useItem(itemName):
 
-class Race(Enum):
-    Human = 1
-    Elf = 2
-    Dwarf = 3
-    Orc = 4
-    Dragonborn = 5
-    Random = 6
+     class Race(Enum):
+         Human = 1
+         Elf = 2
+         Dwarf = 3
+         Orc = 4
+         Dragonborn = 5
+         Random = 6
 
-class Job(Enum):
-    Fighter = 1
-    Wizard = 2
-    Cleric = 3
-    Thief = 4
-    Archer = 5
-    Random = 6
+     class Job(Enum):
+         Fighter = 1
+         Wizard = 2
+         Cleric = 3
+         Thief = 4
+         Archer = 5
+         Random = 6
 
